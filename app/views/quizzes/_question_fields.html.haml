@@ -3,6 +3,6 @@
   =f.text_area :content, rows: 3
   = f.hidden_field :_destroy
   = link_to "Remove Question", "#", class: "removable"
+  / = add_answer(f)
   = f.fields_for :answer do |builder|
     = render 'answer_fields', f: builder
-  
