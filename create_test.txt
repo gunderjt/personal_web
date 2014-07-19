@@ -1,0 +1,6 @@
+Quiz tests
+
+Won't create quiz if there isn't at least one question
+Won't create quiz if questions don't have answer
+Won't create quiz if :name is blank
+

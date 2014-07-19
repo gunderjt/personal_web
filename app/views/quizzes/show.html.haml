@@ -3,6 +3,15 @@
 %p
   %b Name:
   = @quiz.name
+  - @quiz.questions.to_enum.with_index(1) do |q, i|
+
+    = "Question #{i}"
+    %br
+    = q.content
+    %br
+    = "Answer for #{i}"
+    %br
+    = q.answer.content
 
 = link_to 'Edit', edit_quiz_path(@quiz)
 \|

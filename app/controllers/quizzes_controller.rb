@@ -1,6 +1,6 @@
 class QuizzesController < ApplicationController
   before_action :set_quiz, only: [:show, :edit, :update, :destroy]
-  before_filter :verify_is_admin, only: [:edit, :update, :destroy, :new]
+  before_filter :verify_is_admin, except: [:index, :show]
 
   # GET /quizzes
   # GET /quizzes.json
@@ -15,7 +15,6 @@ class QuizzesController < ApplicationController
 
   # GET /quizzes/new
   def new
-    admin?
     @quiz = Quiz.new
     # instantiate question for quiz
     question = @quiz.questions.build
@@ -31,7 +30,7 @@ class QuizzesController < ApplicationController
   # POST /quizzes.json
   def create
     @quiz = Quiz.new(quiz_params)
-
+    #binding.pry 
     respond_to do |format|
       if @quiz.save
         format.html { redirect_to @quiz, notice: 'Quiz was successfully created.' }
@@ -75,10 +74,10 @@ class QuizzesController < ApplicationController
 
     # Never trust parameters from the scary internet, only allow the white list through.
     def quiz_params
-      params.permit(quiz: [:name, 
-        { questions: [:id, :quiz_id, :content, :_delete, 
-          {answer: [:id, :question_id, :content, :_delete]}
+      params.require(:quiz).permit(:name, 
+        { questions_attributes: [:id, :quiz_id, :content, :_destroy, 
+          {answer_attributes: [:id, :question_id, :content, :_destroy]}
         ]}
-      ])
+      )
     end
 end

@@ -5,12 +5,13 @@
       %ul
         - @quiz.errors.full_messages.each do |msg|
           %li= msg
-
+  / = debug f.object
   .field
     = f.label :name
     = f.text_field :name
     %br
     = f.fields_for :questions do |builder|
       = render 'question_fields', f: builder
+    = link_to_add_fields "Add Question", f, :questions
   .actions
     = f.submit 'Save'
