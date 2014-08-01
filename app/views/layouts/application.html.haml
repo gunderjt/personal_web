@@ -1,13 +1,11 @@
 !!!
 %html
-	%head
-		%title Jay Tee Gee
-		= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track' => true
-		= javascript_include_tag 'application', 'data-turbolinks-track' => true
-		= csrf_meta_tags
-	%body
-		= render 'layouts/user_widget'
-		- flash.each do |name, msg|
-			%p{class: "#{name}"}
-				= msg
-		=yield
+  %head
+    %title Jay Tee Gee
+    = stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track' => true
+    = javascript_include_tag 'application', 'data-turbolinks-track' => true
+    = csrf_meta_tags
+  %body
+    = render 'layouts/user_widget'
+    = render 'layouts/nav_menu'
+    =yield

@@ -18,12 +18,4 @@ module QuizzesHelper
 		end
 		link_to("Add Question", '#', class: "add_fields", data: {id: id, fields: fields.gsub("\n", "")})
 	end
-	# def add_answer(f)
-	# 	# binding.pry
-	# 	new_object = f.object.send(:answer).class.new
-	# 	id = new_object.object_id
-	# 	fields = f.fields_for(:answer, new_object, child_index:id) do |builder|
-	# 		render "answer_fields", f: builder
-	# 	end
-	# end
 end

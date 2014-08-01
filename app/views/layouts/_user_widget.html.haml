@@ -1,8 +1,3 @@
 .itsme
-	- if admin?
-		= current_user.email
-		%br
 	- if user_signed_in?
-		Hello Jeff,
-		%br
-		= link_to "Do you want to sign out", destroy_user_session_path, method: :delete
+		= link_to "Do you want to sign out?", destroy_user_session_path, method: :delete
