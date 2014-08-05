@@ -14,3 +14,7 @@
 # Ignore all logfiles and tempfiles.
 /log/*.log
 /tmp
+
+# Ignore secret key
+/config/secret.yml
+/config/initializers/devise.rb

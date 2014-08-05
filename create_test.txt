@@ -1,3 +1,10 @@
+Production problems
+/opt/nginx/logs/error.log
+
+Apparently I'm supposed to have a secret key for the production environment that must not be used
+in source code.  I'm also looking into switching to postgre development and production database environment
+
+
 Quiz tests
 
 Won't create quiz if there isn't at least one question
