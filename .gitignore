@@ -21,3 +21,8 @@
 # Ignore application configuration
 /config/application.yml
 /config/application.yml*
+/config/database.yml
+/config/database.yml*
+
+#Ignore the database schema (just incase, better to rebuild than have errors importing)
+/db/schema.rb
