@@ -1,11 +1,8 @@
 %p#notice= notice
 
-%p
-  %b Title:
+%h2.title
   = @blog.title
 %p
-  %b Content:
-  %br
   / = @blog.content
   / = raw Pygments.highlight(@blog.content)
   / = simple_format @blog.content
