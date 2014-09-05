@@ -1,0 +1,12 @@
+!!!
+%html
+  %head
+    %title Institute of Behavioral Sciences
+    = stylesheet_link_tag 'ibs_web', media: 'all', 'data-turbolinks-track' => true
+    = javascript_include_tag 'application', 'data-turbolinks-track' => true
+    = csrf_meta_tags
+  %body
+    = render partial: "ibs_web/header"
+    = render partial: "layouts/user_widget"
+    = yield
+    = render partial: "ibs_web/footer"

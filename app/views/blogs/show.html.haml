@@ -1,0 +1,16 @@
+%p#notice= notice
+
+%p
+  %b Title:
+  = @blog.title
+%p
+  %b Content:
+  %br
+  / = @blog.content
+  / = raw Pygments.highlight(@blog.content)
+  / = simple_format @blog.content
+  = markdown @blog.content
+
+= link_to 'Edit', edit_blog_path(@blog)
+\|
+= link_to 'Back', blogs_path

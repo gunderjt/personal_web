@@ -42,17 +42,26 @@ gem 'spring',        group: :development
 #using haml markup
 gem 'haml'
 gem 'haml-rails'
+
 #user authentication for website.
 gem 'devise'
+#print out debug variables pretty like
 gem 'awesome_print'
 #debugging with pry
-#gem 'pry-rails', group: :development
-
+#debugging and console related awesomeness
 group :development do
 	gem 'pry'
 	gem 'pry-remote'
+  gem 'pry-rails'
 	gem 'pry-stack_explorer'
 	gem 'pry-byebug'
 end
 
-gem 'figaro'
+#Sets Environmental variables for production
+gem 'figaro' 
+
+# Blog specific gems
+gem 'pygments.rb'
+gem 'redcarpet'
+
+gem 'acts-as-taggable-on'

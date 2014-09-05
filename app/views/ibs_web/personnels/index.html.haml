@@ -1,0 +1,43 @@
+%h1 Listing personnels
+
+%table
+  %tr
+    %th First name
+    %th Last name
+    %th Salutation
+    %th Mailing list
+    %th Formally affiliated
+    %th Informally affiliated
+    %th Ibs retiree
+    %th Ibs rostered
+    %th Notes
+    %th Research interests
+    %th Skills
+    %th Biography
+    %th Employee
+    %th
+    %th
+    %th
+
+  - @personnels.each do |personnel|
+    %tr
+      %td= personnel.first_name
+      %td= personnel.last_name
+      %td= personnel.salutation
+      %td= personnel.mailing_list
+      %td= personnel.formally_affiliated
+      %td= personnel.informally_affiliated
+      %td= personnel.ibs_retiree
+      %td= personnel.ibs_rostered
+      %td= personnel.notes
+      %td= personnel.research_interests
+      %td= personnel.skills
+      %td= personnel.biography
+      %td= personnel.employee_id
+      %td= link_to 'Show', personnel
+      %td= link_to 'Edit', edit_personnel_path(personnel)
+      %td= link_to 'Destroy', personnel, :method => :delete, :data => { :confirm => 'Are you sure?' }
+
+%br
+
+= link_to 'New Personnel', new_ibs_web_personnel_path

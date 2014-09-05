@@ -1,0 +1,1 @@
+json.extract! @personnel, :id, :first_name, :last_name, :salutation, :mailing_list, :formally_affiliated, :informally_affiliated, :ibs_retiree, :ibs_rostered, :notes, :research_interests, :skills, :biography, :employee_id, :created_at, :updated_at

@@ -1,0 +1,21 @@
+#header
+	#skipnav
+		%a{href: "#content"} Skip to Main Content
+	.section
+		%h1
+			%a{href: "http://www.colorado.edu/ibs/"}Institute of Behavioral Science (IBS)
+		#search
+			#culinks
+				%strong CU:
+				%a{href: "http://www.colorado.edu/"}Home &#x2022;
+				%a{href: "http://www.colorado.edu/atoz/"}A to Z &#x2022;
+				%a{href: "http://www.colorado.edu/campusmap"}Campus Map
+			#searchform
+				%form{action: "http://www.colorado.edu/search/custom/searchdirect.cgi", method: "post"}
+					#inputwrapper
+						%input.searchstring{type: 'text', name:'searchstring', value:'Search this site', onfocus:"this.value=''"}
+						%input{type:'hidden', name:'searchtype', value:'www.colorado.edu/ibs'}
+					%input{type:"image", src:"/assets/submit.png", value:"Submit", size:"22,23"}
+
+
+
