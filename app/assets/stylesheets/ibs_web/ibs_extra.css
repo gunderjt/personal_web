@@ -1,0 +1,495 @@
+/* Overrides defaults in main css and blueprintscss/screen.css *****/
+
+/**** Basic selectors - Do not override main!!! ****/
+/* fonts */
+/* links */
+/* lists */
+ul li {list-style-type:square;}
+li ul li {list-style-type:disc;}
+/* tables */
+/* forms */
+
+/**** Positioning ****/
+.hidden {position:absolute;left:-10000px;top:auto;width:1px;height:1px;overflow:hidden;}
+.lower {margin-top:4em;}
+
+/**** Fonts/links/boxes/highlights/etc ****/
+.grayedout {color:#999;background-color:#ddd;}
+h3.logout {text-align:right;font-size:1.5em;line-height:1;}
+div.add {float:right;}
+div.add a {text-decoration:none;}
+div.add img {display:inline;vertical-align:middle;border:0;}
+
+#quote {
+	width:580px;
+	min-width:400px;
+	margin:0 2px 14px 4px;
+	padding:6px 10px 8px 10px;
+	border-top:1px solid #3a5276;
+	vertical-align:top;
+	color:#000;
+	background:#6488be;
+}
+#quote h3 {
+	padding:0;
+	margin:0 0 5px 0;
+	font:italic bold 1.4em/1.3 "Helvetica Neue",Helvetica,Arial,sans-serif;
+}
+#quote p {
+	padding:0;
+	margin:0;
+	font:italic 1.4em/1.3 Georgia,"Times New Roman",times-roman,times,serif;
+}
+#quote p.author {
+	text-align:right;
+	white-space:nowrap;
+	font:italic bold 1em/1.4 "Helvetica Neue",Helvetica,Arial,sans-serif;
+}
+#quote p.citation {
+	text-align:right;
+	white-space:wrap;
+	font:italic bold 1em/1.4 "Helvetica Neue",Helvetica,Arial,sans-serif;
+}
+
+#home-sidebar-content {
+	margin:auto;
+}
+#home-sidebar-content img {
+	border:4px solid #CFB97D;
+	margin:0 auto;
+	margin-bottom:14px;
+}
+#home-sidebar-content ul {
+	margin-top:6px;
+	text-align:left;
+}
+#home-sidebar-content ul li {
+	list-style-type:none;
+	color:#fff;
+	font-size:1.1em;
+}
+#home-sidebar-content li ul li {
+	list-style-type:none;
+	color:#fff;
+	font-size:1em;
+	font-style:italic;
+}
+#home-sidebar-content a, #home-sidebar-content-news a:link, #home-sidebar-content-news a:visited {
+	color:#fff;
+	text-decoration:none;
+}
+#home-sidebar-content a:hover, #home-sidebar-content-news a:active {
+	color:#5071a4;
+	background:#acbfc6;
+	text-decoration:none;
+}
+#home-sidebar-content-news {
+	border-top:1px solid #fff;
+	color:#1562aa;
+	background:#dae5f7;
+	margin:auto;
+	margin-bottom:12px;
+	padding:2px 10px 4px 10px;
+	width:90%;
+	vertical-align:top;
+}
+#home-sidebar-content-news h1 {
+	color:#000;
+	font-size:1.2em;
+	text-transform:uppercase;
+	padding:0;
+	margin:0;
+	text-align:center;
+}
+#home-sidebar-content-news p {
+	padding:0;
+	margin:.7em 0 .1em 0;
+	font-size:1.1em;
+}
+#home-sidebar-content-news a, #home-sidebar-content-news a:link, #home-sidebar-content-news a:visited {
+	color:#5071a4;
+	text-decoration:none;
+}
+#home-sidebar-content-news a:hover, #home-sidebar-content-news a:active {
+	color:#5071a4;
+	background:#acbfc6;
+	text-decoration:none;
+}
+
+/* http://robertnyman.com/2010/03/16/drop-shadow-with-css-for-all-web-browsers */
+.shadow {
+	-moz-box-shadow: 3px 3px 4px #ccc;
+	-webkit-box-shadow: 3px 3px 4px #ccc;
+	box-shadow: 3px 3px 4px #ccc;
+	-ms-filter: "progid:DXImageTransform.Microsoft.Shadow(Strength=4, Direction=135, Color='#cccccc')"; /* For IE 8 */
+	filter: progid:DXImageTransform.Microsoft.Shadow(Strength=4, Direction=135, Color='#cccccc'); /* For IE 5.5 - 7 */
+}
+
+/**** Tables ****/
+tr.even {background:#e5ecf9;}
+
+/**** Lists ****/
+#ibs-home-logo {margin:0 0 14px 0;}
+
+#home-program-list {margin:0 0 1em 2px;font:1.7em/1.4em Verdana,Geneva,Tahoma,"Helvetica Neue",Helvetica,Arial,sans-serif}
+#home-program-list ul{margin:0;padding:0;list-style-type:none;}
+#home-program-list li {
+	list-style-type:none;
+	background-image:url(/ibs/ibs_new/images/list_bullet_square_gold.png);
+	background-repeat:no-repeat;
+	background-position:0px 11px; 
+	padding-left:14px;
+	font-size:0.95em;
+	line-height:1.5;
+}
+#home-program-list ul.centers li {
+	background-image:url(/ibs/ibs_new/images/list_bullet_round_gold.png);
+	font-style:italic;
+	font-size:0.95em;
+	line-height:1.5;
+}
+
+#home-program-list li a, #home-program-list li a:link, #home-program-list li a:visited {
+	color:#053260;
+	text-decoration:none;
+}
+#home-program-list ul.centers li a, #home-program-list ul.centers li a:link, #home-program-list ul.centers li a:visited {
+	color:#4b6b9a;
+	text-decoration:none;
+}
+#home-program-list li a:hover, #home-program-list li a:active,
+#home-program-list ul.centers li a:hover, #home-program-list ul.centers li a:active {
+	background-color:#dae5f7;
+	text-decoration:none;
+}
+ul.speakerslist  {
+	margin: 0;
+	padding: 0;
+}
+ul.speakerslist li {
+	list-style:none;
+	line-height:1.0em;
+	font-size:1em;
+	margin: .2em 0 0 .2em;
+	padding: .1em 0 0 .1em;
+}
+#inside-ibs .inside-sidebar{margin:auto;padding:0 9px 2em 9px;background-color:#3a5276;}
+
+#inside-sidebar-content {
+	margin:auto;
+}
+#inside-sidebar-content img {
+	border:4px solid #CFB97D;
+	margin:0 auto;
+	margin-bottom:14px;
+}
+#inside-sidebar-content ul {
+	margin-top:1px;
+	margin-bottom:6px;
+	text-align:left;
+}
+#inside-sidebar-content ul li {
+	list-style-type:none;
+	color:#fff;
+	font-size:1.1em;
+}
+#inside-sidebar-content li ul li {
+	list-style-type:none;
+	color:#fff;
+	font-size:1em;
+	font-style:italic;
+}
+#inside-sidebar-content a, #inside-sidebar-content-news a:link, #inside-sidebar-content-news a:visited {
+	color:#fff;
+	text-decoration:none;
+}
+#inside-sidebar-content a:hover, #inside-sidebar-content-news a:active {
+	color:#21539f;
+	background:#acbfc6;
+	text-decoration:none;
+}
+#inside-sidebar-content h1 {
+	color:#fff;
+	font-size:1.2em;
+	text-transform:uppercase;
+	padding:0;
+	margin-bottom:10px;
+	text-align:center;
+}
+#inside-sidebar-logo {
+	margin: 0 auto;
+	margin-top:20px;
+	margin-left:40px;
+}
+
+#inside-ibs li ul li {
+	font-size:1em;
+}
+#inside-ibs .content h2 {
+	font-weight:bold;
+}
+
+#findings {
+	width:600px;
+	min-width:400px;
+	margin:0 2px 14px 24px;
+	padding:6px 10px 8px 10px;
+	border-top:1px solid #3a5276;
+	vertical-align:top;
+	color:#000;
+	background:#bccae0;
+}
+#findings h3 {
+	padding:0;
+	margin:0 0 5px 0;
+	font:italic bold 1.4em/1.3 "Helvetica Neue",Helvetica,Arial,sans-serif;
+}
+#findings p {
+	padding:0;
+	margin:0;
+	font:1.3em/1.2 Georgia,"Times New Roman",times-roman,times,serif;
+}
+#findings p.author {
+	text-align:right;
+	white-space:nowrap;
+	font:italic bold 1em/1.4 "Helvetica Neue",Helvetica,Arial,sans-serif;
+}
+#findings p.citation {
+	text-align:right;
+	white-space:wrap;
+	font:italic bold 1em/1.4 "Helvetica Neue",Helvetica,Arial,sans-serif;
+}
+
+dl.event-item  {
+	margin:0;
+	margin-bottom:.5em;	
+	padding:0;
+}
+dl.event-item dt  {
+	margin-top:1.5em;
+	margin-bottom:.2em;	
+	padding:0;
+	font-size:11px;
+	voice-family: "\"}\""; 
+	voice-family:inherit;
+	font-size:13px;	
+}
+dl.event-item dd {
+	margin-left:0.8em;
+	margin-top:0.2em;
+	padding:0;
+	font-size:11px;
+	voice-family: "\"}\""; 
+	voice-family:inherit;
+	font-size:13px;	
+}
+dl.event-item dd.speaker {
+	font-weight:bold;
+	margin-top:0.2em;
+}
+dl.event-item dd.title {
+	font-weight:bold;
+	font-style:italic;
+	margin-top:.2em;
+	margin-bottom:.3em;	
+}
+ul.toplinks {
+	list-style:none;
+	margin:0;
+	padding:0;
+	padding-bottom:10px;
+}
+ul.toplinks li 	{
+	display:inline;
+	list-style:none;
+	margin:0;
+	padding:0;
+	color:#669;
+	line-height:1.2em;
+	font-size:10px;
+	voice-family: "\"}\""; 
+	voice-family:inherit;
+	font-size:12px;	
+}
+html>ul.toplinks li {font-size:12px;}
+
+ul.toplinks li a,ul.toplinks li a:link { color:#33c;text-decoration:none; }
+ul.toplinks li a:visited,ul.toplinks li a:active { color:#33c;text-decoration:none; }
+ul.toplinks li a:hover { color:#900;text-decoration:underline; }
+
+dl.crs-software  {
+	margin:0;
+	margin-bottom:.5em;	
+	padding:0;
+}
+dl.crs-software dt  {
+	margin-top:1em;
+	margin-left:1.4em;
+	margin-bottom:.2em;	
+	padding:0;
+	font-size:11px;
+	font-weight:bold;
+	voice-family: "\"}\""; 
+	voice-family:inherit;
+	font-size:13px;	
+}
+dl.crs-software dd {
+	margin-left:1.6em;
+	margin-top:0.2em;
+	padding:0;
+	font-size:10px;
+	voice-family: "\"}\""; 
+	voice-family:inherit;
+	font-size:12px;	
+}
+h2.crs-software {
+	margin:14px 12px 0 0px;
+	padding-top:0;
+	font-style:italic;
+	font-size:14px;
+}
+dl.crs-best-practices  {
+	margin:0;
+	margin-bottom:.5em;	
+	padding:0;
+}
+dl.crs-best-practices dt  {
+	margin-top:1em;
+	margin-left:.2em;
+	margin-bottom:.2em;	
+	padding:0;
+	font-size:11px;
+	font-weight:bold;
+	voice-family: "\"}\""; 
+	voice-family:inherit;
+	font-size:12px;	
+}
+dl.crs-best-practices dd {
+	margin-left:1em;
+	margin-top:0.2em;
+	margin-bottom:0.4em;
+	padding:0;
+	font-size:11px;
+	voice-family: "\"}\""; 
+	voice-family:inherit;
+	font-size:12px;	
+}
+h3.crs-best-practices {
+	margin:14px 12px 0 0px;
+	padding-top:0;
+	font-style:italic;
+	font-size:15px;
+}
+p.crs-best-practices {
+	font-size:12px;
+}
+dl.data-sources  {
+	margin:0;
+	margin-bottom:.5em;	
+	padding:0;
+}
+dl.data-sources dt  {
+	margin-top:1em;
+	margin-left:1.4em;
+	margin-bottom:.2em;	
+	padding:0;
+	font-size:11px;
+	font-weight:bold;
+	voice-family: "\"}\""; 
+	voice-family:inherit;
+	font-size:13px;	
+}
+dl.data-sources dd {
+	margin-left:2.5em;
+	margin-top:0.2em;
+	padding:0;
+	font-size:10px;
+	voice-family: "\"}\""; 
+	voice-family:inherit;
+	font-size:12px;	
+}
+dl.data-sources dl dt {
+	margin-left:2.9em;
+	margin-top:1em;
+	padding:0;
+	font-size:10px;
+	voice-family: "\"}\""; 
+	voice-family:inherit;
+	font-size:12px;		
+}
+dl.data-sources dl dd {
+	margin-left:3.9em;
+	margin-top:0.2em;
+	padding:0;
+	font-size:10px;
+	voice-family: "\"}\""; 
+	voice-family:inherit;
+	font-size:12px;		
+}
+h2.data-sources {
+	margin:14px 12px 0 0px;
+	padding-top:0;
+	font-style:italic;
+	font-size:14px;
+}
+
+/**** Forms ****/
+input.shorttext {width:45px;}
+input.mediumtext {width:200px;}
+input.longtext {width:580px;}
+/* form buttons */
+/* progress bar */
+
+
+
+/* main-mid-profile is the main window area for the contents of profile pages.  Used with main-left-profile. */
+#main-mid-profile {
+	position:relative;
+	width:546px;
+	margin:0 0 0 214px;
+	padding:8px 0 0 0;
+	z-index:3;
+	voice-family: "\"}\""; /* Tantek box model hack for IE5 */
+	voice-family:inherit;
+	width:525px;	
+}
+body>#main-mid-profile {width:525px;} /* "be nice to Opera 5" rule */
+
+/* main-left-profile is the column used for profile page photographs. Used with main-mid-profile. */
+#main-left-profile {
+	position:absolute;
+	width:214px;
+	top:37px;
+	left:0;
+	margin:0;
+	padding:0 0 0 14px;	
+	background:#fff;
+	z-index:3;
+		voice-family: "\"}\""; /* Tantek box model hack for IE5 */
+	voice-family:inherit;
+	width:196px;
+}
+body>#main-left-profile {width:196px;} /* "be nice to Opera 5" rule */
+
+.stronglist  {
+	margin: 1.2em 0 1.2em 0;
+	padding: 0;
+}
+ul.stronglist li {
+	list-style:none;
+	line-height:1.2em;
+	font-weight:bold;
+	font-size:1.1em;
+}
+#main-mid-profile dl dt {
+	line-height:1.2em;
+	font-weight:bold;
+	font-size:.9em;
+}
+#main-mid-profile dl dd {
+	font-size:.9em;
+}
+h2.profile {
+	margin: 1.2em 0 1.2em 0;
+	font-size:1.1em;
+}

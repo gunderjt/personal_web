@@ -9,8 +9,16 @@
 %nav.nav-menu
   %svg.close-nav-menu{height: "40", width: "50", xmlns: "http://www.w3.org/2000/svg"}
     %polygon{fill: "#FFFFFF", points: "39.4,30.4 29,20 39.4,9.6 35.4,5.6 25,16 14.6,5.6 10.6,9.6 21,20 10.6,30.4 14.6,34.4 25,24 35.4,34.4 "}
-  %a.nav-link.selected{href: "/"} Home
-  %a.nav-link{href: "/about"} About Me
-  %a.nav-link{href: "/quizzes"} Quizzes
-  %a.nav-link{href: "/portfolio"} Portfolio
-  %a.nav-link{href: "/contact"} Contact
+  %ul
+    %li
+      %a.nav-link.selected{href: "/"} Home
+    %li
+      %a.nav-link{href: "/about"} About Me
+    %li
+      %a.nav-link{href: "/quizzes"} Quizzes
+    %li
+      %a.nav-link{href: "/portfolio"} Portfolio
+    %li
+      %a.nav-link{href: "/contact"} Contact
+
+  = render partial: "layouts/logo", locals: {fill_color: '#FF4E00'}

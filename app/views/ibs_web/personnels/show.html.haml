@@ -1,0 +1,45 @@
+%p#notice= notice
+
+%p
+  %b First name:
+  = @personnel.first_name
+%p
+  %b Last name:
+  = @personnel.last_name
+%p
+  %b Salutation:
+  = @personnel.salutation
+%p
+  %b Mailing list:
+  = @personnel.mailing_list
+%p
+  %b Formally affiliated:
+  = @personnel.formally_affiliated
+%p
+  %b Informally affiliated:
+  = @personnel.informally_affiliated
+%p
+  %b Ibs retiree:
+  = @personnel.ibs_retiree
+%p
+  %b Ibs rostered:
+  = @personnel.ibs_rostered
+%p
+  %b Notes:
+  = @personnel.notes
+%p
+  %b Research interests:
+  = @personnel.research_interests
+%p
+  %b Skills:
+  = @personnel.skills
+%p
+  %b Biography:
+  = @personnel.biography
+%p
+  %b Employee:
+  = @personnel.employee_id
+
+= link_to 'Edit', edit_ibs_web_personnel_path(@personnel)
+\|
+= link_to 'Back', ibs_web_personnels_path

@@ -7,7 +7,6 @@ gem 'rails', '4.1.0'
 #gem 'sqlite3'
 gem 'pg'
 # Use SCSS for stylesheets
-gem 'sass-rails', '~> 4.0.3'
 # Use Uglifier as compressor for JavaScript assets
 gem 'uglifier', '>= 1.3.0'
 # Use CoffeeScript for .js.coffee assets and views
@@ -42,17 +41,30 @@ gem 'spring',        group: :development
 #using haml markup
 gem 'haml'
 gem 'haml-rails'
+
 #user authentication for website.
 gem 'devise'
+#print out debug variables pretty like
 gem 'awesome_print'
 #debugging with pry
-#gem 'pry-rails', group: :development
-
+#debugging and console related awesomeness
 group :development do
 	gem 'pry'
 	gem 'pry-remote'
+  gem 'pry-rails'
 	gem 'pry-stack_explorer'
 	gem 'pry-byebug'
 end
 
-gem 'figaro'
+#Sets Environmental variables for production
+gem 'figaro' 
+
+# Blog specific gems
+gem 'pygments.rb'
+gem 'redcarpet'
+gem 'acts-as-taggable-on'
+
+# Bootstrap CSS Gems
+gem 'bootstrap-sass'
+gem 'autoprefixer-rails'
+gem 'sass-rails', '~> 4.0.3'
