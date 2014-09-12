@@ -46,26 +46,6 @@
     .panel.panel-default
       .panel-heading
         %h4.panel-title
-          %a{"data-parent" => "#accordion", "data-toggle" => "collapse", :href => "#collapseFour"}
-            %span.glyphicon.glyphicon-file>
-            The LongCut
-      #collapseFour.panel-collapse.collapse
-        .panel-body
-          %table.table
-            %tr
-              %td
-                %span.glyphicon.glyphicon-usd
-                %a{:href => "http://www.jquery2dotnet.com"} Sales
-            %tr
-              %td
-                %span.glyphicon.glyphicon-user
-                %a{:href => "http://www.jquery2dotnet.com"} Customers
-            %tr
-              %td
-                %span.glyphicon.glyphicon-tasks
-                %a{:href => "http://www.jquery2dotnet.com"} Products
-            %tr
-              %td
-                %span.glyphicon.glyphicon-shopping-cart
-                %a{:href => "http://www.jquery2dotnet.com"} Shopping Cart
+          %span.glyphicon.glyphicon-file
+          =link_to "The LongCut", tag_path(tag:'longcut')
   = render partial: "layouts/logo", locals: {fill_color: '#FF4E00'}
