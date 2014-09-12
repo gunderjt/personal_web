@@ -25,4 +25,4 @@
 /config/database.yml*
 
 #Ignore the database schema (just incase, better to rebuild than have errors importing)
-/db/schema.rb
+#/db/schema.rb
