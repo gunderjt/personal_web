@@ -4,7 +4,9 @@
 .itsme{
 	float: right;
 }
-
+.open-nav-menu{
+	margin-top: 5px;
+}
 .nav-menu{
 	position: fixed;
 	top: 0;
@@ -39,34 +41,11 @@
 	.slideout-menu-toggle:hover {
 		color: #fff;
 	}
-
-	ul {
-		list-style: none;
-		font-weight: 300;
-		border-top: 1px solid #151515;
-		border-bottom: 1px solid #454545;
-
-		li {
-			border-top: 1px solid #454545;
-			border-bottom: 1px solid #151515;
-
-			a {
-				position: relative;
-				display: block;
-				padding: 10px;
-				color: #999;
-				text-decoration: none;
-				i {
-					position: absolute;
-					top: 15px;
-					right: 10px;
-					opacity: .5;
-				}
-			}
-			a:hover {
-				background: #000;
-				color: #fff;
-			}
-		}
-	}
+}
+#accordion .panel-heading{
+  background-color: #333;
+  color: #FF4E00;
+}
+.glyphicon{
+	margin-right: 3px;
 }

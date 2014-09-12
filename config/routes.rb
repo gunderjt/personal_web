@@ -7,6 +7,7 @@ Rails.application.routes.draw do
 
   devise_for :users
   get 'static_pages/home'
+  get '/about_me', to: 'static_pages#about_me', as: :about
   root to: 'static_pages#home'
 
   #routes for ibs_web

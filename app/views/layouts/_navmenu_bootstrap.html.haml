@@ -1,0 +1,71 @@
+%svg{class: "open-nav-menu", xmlns: "http://www.w3.org/2000/svg", width: "50", height: "40"}
+  %rect{x:"7", fill:"#FF4E00", width:"36", height:"6"}
+  %rect{x:"7", y:"10", fill:"#FF4E00", width:"36", height:"6"}
+  %rect{x:"7", y:"20", fill:"#FF4E00", width:"36", height:"6"}
+  %path{d: "M7.4,32.4h2.7l1.7,4.4l1.7-4.4h2.7v7.4h-2v-4.3l-1.7,4.3h-1.5l-1.6-4.3v4.3H7.4V32.4z", fill: "#FF4E00"}
+  %path{d: "M18.3,32.4h5.9v1.9h-3.8v0.9h3.7V37h-3.7v1h3.9v1.8h-5.9V32.4z", fill: "#FF4E00"}
+  %path{d: "M26.2,32.4h2.2l2.9,3.9v-3.9h2v7.4h-1.9l-3.2-4.3v4.3h-2V32.4z", fill: "#FF4E00"}
+  %path{d: "M35.4,36.9v-4.5h2.1v4.2c0,1,0.2,1.5,1.5,1.5c1.3,0,1.5-0.5,1.5-1.5v-4.2h2v4.5c0,1.4-0.2,3.1-3.5,3.1 S35.4,38.3,35.4,36.9z", fill: "#FF4E00"}
+%nav.nav-menu
+  %svg.close-nav-menu{height: "40", width: "50", xmlns: "http://www.w3.org/2000/svg"}
+    %polygon{fill: "#FFFFFF", points: "39.4,30.4 29,20 39.4,9.6 35.4,5.6 25,16 14.6,5.6 10.6,9.6 21,20 10.6,30.4 14.6,34.4 25,24 35.4,34.4 "} 
+  #accordion.panel-group
+    .panel.panel-default
+      .panel-heading
+        %h4.panel-title
+          %a{"data-parent" => "#accordion", :href => "/"}
+            %span.glyphicon.glyphicon-home>
+            Home
+    .panel.panel-default
+      .panel-heading
+        %h4.panel-title
+          %a{"data-parent" => "#accordion", :href => "/about_me"}
+            %span.glyphicon.glyphicon-info-sign>
+            About Me
+    .panel.panel-default
+      .panel-heading
+        %h4.panel-title
+          %a{"data-parent" => "#accordion", "data-toggle" => "collapse", :href => "#collapseThree"}
+            %span.glyphicon.glyphicon-align-left
+            LEPR
+      #collapseThree.panel-collapse.collapse
+        .panel-body
+          %table.table
+            %tr
+              %td
+                =link_to "Linux", tag_path(tag: 'linux')
+            %tr
+              %td
+                =link_to "(e)Nginx", tag_path(tag: 'nginx')
+            %tr
+              %td
+                =link_to "PostGreSQL", tag_path(tag: 'postgresql')
+            %tr
+              %td              
+                =link_to "Ruby on Rails", tag_path(tag: 'ror')
+    .panel.panel-default
+      .panel-heading
+        %h4.panel-title
+          %a{"data-parent" => "#accordion", "data-toggle" => "collapse", :href => "#collapseFour"}
+            %span.glyphicon.glyphicon-file>
+            The LongCut
+      #collapseFour.panel-collapse.collapse
+        .panel-body
+          %table.table
+            %tr
+              %td
+                %span.glyphicon.glyphicon-usd
+                %a{:href => "http://www.jquery2dotnet.com"} Sales
+            %tr
+              %td
+                %span.glyphicon.glyphicon-user
+                %a{:href => "http://www.jquery2dotnet.com"} Customers
+            %tr
+              %td
+                %span.glyphicon.glyphicon-tasks
+                %a{:href => "http://www.jquery2dotnet.com"} Products
+            %tr
+              %td
+                %span.glyphicon.glyphicon-shopping-cart
+                %a{:href => "http://www.jquery2dotnet.com"} Shopping Cart
+  = render partial: "layouts/logo", locals: {fill_color: '#FF4E00'}
