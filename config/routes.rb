@@ -10,10 +10,10 @@ Rails.application.routes.draw do
   get '/about_me', to: 'static_pages#about_me', as: :about
   root to: 'static_pages#home'
 
-  #routes for ibs_web
-  namespace :ibs_web do
-    resources :personnels
-  end
+  # #routes for ibs_web
+  # namespace :ibs_web do
+  #   resources :personnels
+  # end
 
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
