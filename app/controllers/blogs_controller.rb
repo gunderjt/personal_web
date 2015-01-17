@@ -1,5 +1,6 @@
 class BlogsController < ApplicationController
   before_action :set_blog, only: [:show, :edit, :update, :destroy]
+  before_action :verify_is_admin, only: [:edit, :update, :destroy, :new]
 
   # GET /blogs
   # GET /blogs.json
